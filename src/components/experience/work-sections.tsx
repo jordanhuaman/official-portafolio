@@ -21,7 +21,7 @@ const WorkSections = () => {
   const currentJob = jobs[currentId];
 
   return (
-    <div className='mt-[10px] flex md:gap-20'>
+    <div className='mt-[10px] flex gap-20'>
       <section className={`flex flex-col gap-1 relative ${styles.section_border} `}>
         {jobs.map((job, index) => (
           <div
@@ -35,8 +35,8 @@ const WorkSections = () => {
           </div>
         ))}
       </section>
-      <section className='flex-1 flex flex-col gap-6'>
-        <div>
+      <section className='flex-1 flex gap-6'>
+        <div className='flex-shrink-0'>
           <h3 className='text-lightest_slate text-xl font-ppSemiBold mb-1'>
             {currentJob.position} <span className='text-primary'>@{currentJob.company}</span>
           </h3>
@@ -44,11 +44,11 @@ const WorkSections = () => {
             {currentJob.start} - {currentJob.end}
           </p>
         </div>
-        <ul className='flex flex-col gap-2'>
+        <ul className='flex-1 flex flex-col gap-2'>
           {currentJob.tasks.map((task, index) => (
             <li key={index} className='text-slate text-[14px] flex items-start gap-5'>
               <PlayCircle className='w-4 h-4 text-primary mt-1 flex-shrink-0' />
-              <span className='text-sm tracking-wide'>{task}</span>
+              <span className='text-sm tracking-tighter'>{task}</span>
             </li>
           ))}
         </ul>

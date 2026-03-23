@@ -71,3 +71,19 @@ p {
   font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
   ;
 }
+
+@keyframes bounceOnce {
+  0%, 80% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(-8px);
+  }
+  90%, 100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-pause {
+  animation: bounceOnce 3s ease-in-out infinite;
+}

@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "greeting": "Hi, my name is",
+    "role": "Backend Developer",
+    "name": "Jhordan Huaman.",
+    "subtitle": "I Build things for the server",
+    "description": "Systems Engineer | 2 years as backend developer | Learning cloud and DevOps",
+    "cta": "Check out my projects!"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects"
+  },
+  "about":{
+    "about1":"I'm a backend developer with a passion for building efficient and scalable software. I have experience working with Java, Node.js and cloud technologies. I enjoy learning new technologies and improving my skills to create better solutions.",
+    "about2":"In my last job, I had the opportunity to work on a project that involved migrating a monolithic application to a microservices architecture. This experience allowed me to gain valuable insights into the benefits and challenges of microservices, as well as how to design and implement them effectively.",
+    "about3":"Nowadays, I'm focused on learning more about cloud computing and DevOps practices to enhance my skills and contribute to building robust and scalable applications."
+  },
+  "experience": {
+    "jobs": [
+      {
+        "company": "Joyit",
+        "position": "Trainee",
+        "start": "Octuber 2024",
+        "end": "March 2025",
+        "tasks": [
+          "Developing API using java, Quarkus framework, PostgreSQL and graphql",
+          "Collaborating with cross-functional teams to define and design new features wiht agile methodologies",
+          "Migration monolitic to microservices architecture"
+        ],
+        "stack":[
+          "Java","Quarkus", "Microservices", "Arquitecture", "S3"
+        ]
+      },
+      {
+        "company": "Joyit",
+        "position": "Backend Developer",
+        "start": "March 2025",
+        "end": "January 2026",
+        "tasks": [
+          "Lead the development of new features and services",
+          "Architecture Design like microservices, event-driven and serverless",
+          "CQRS, Saga Pattern, DDD and real time notifications"
+        ]
+      }
+    ]
+  }
+}
