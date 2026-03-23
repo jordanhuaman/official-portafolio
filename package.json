@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "i18next": "^25.10.5",
+    "i18next-browser-languagedetector": "^8.2.1",
     "lucide-react": "^0.446.0",
     "next": "14.2.13",
     "nextjs-portafolio": "file:",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-i18next": "^16.6.2"
   },
   "devDependencies": {
     "@types/node": "^20",

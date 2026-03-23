@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Jhordan Huaman.",
+    "subtitle": "Construyo cosas para el servidor",
+    "description": "Ingeniero de Sistemas | 2 años como desarrollador backend | Aprendiendo cloud y DevOps",
+    "cta": "¡Mira mis proyectos!"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos"
+  }
+}

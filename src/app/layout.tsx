@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { I18nProvider } from "@/i18n/provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -76,7 +77,9 @@ export default function RootLayout({
       <body
         className={`antialiased ${ppB.variable} ${ppBold.variable} ${ppThin.variable} ${ppSemiBold.variable} ${ppRegular.variable} ${ppMedium.variable} ${ppLight.variable}${ppELight.variable} ${ppEBold.variable}`}
       >
-        {children}
+        <I18nProvider>
+          {children}
+        </I18nProvider>
       </body>
     </html>
   );

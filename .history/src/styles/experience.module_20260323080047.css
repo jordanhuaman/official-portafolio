@@ -1,0 +1,37 @@
+.section_border::before {
+  content: "";
+  width: 2px;
+  background-color: #8e98a7;
+  position: absolute;
+  height: 100%;
+}
+
+.current_p {
+  background-color: #0e1d37;
+  position: relative;
+  color:#53cdd1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.current_p::before{
+  content: "";
+  width: 4px;
+  background-color: #53cdd1;
+  border-radius: 5px;
+  position: absolute;
+  left: -1px;
+  height: 100%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
