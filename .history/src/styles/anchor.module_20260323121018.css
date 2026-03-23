@@ -1,0 +1,15 @@
+.activation{
+  opacity: 0.6;
+
+}
+.line {
+  width: 40px;
+  background-color: white;
+  height: 1.3px;
+  transition: width 1s ease, opacity 1s ease;
+}
+
+.activation:hover .line {
+  width: 60px;
+  opacity: 1;
+}

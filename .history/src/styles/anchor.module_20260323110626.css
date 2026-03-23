@@ -1,0 +1,14 @@
+.line::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 1.3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.line:hover::after {
+  width: 80%;
+}

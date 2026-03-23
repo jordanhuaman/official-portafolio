@@ -1,0 +1,22 @@
+.line:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  height:1.3px;
+  background-color: white;
+  animation: grow 1s forwards;
+  -webkit-animation: grow 1s forwards;
+}
+
+@keyframes grow {
+  from {
+    width: 1%;
+    /* Inicio de la animación */
+  }
+
+  to {
+    width: 100%;
+    /* Final de la animación */
+  }
+}

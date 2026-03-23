@@ -55,7 +55,16 @@ body::-webkit-scrollbar-thumb {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
 
+::-webkit-scrollbar {
+  background-color: #08162a;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8e98a7;
+  border-radius: 10px;
 }
 
 p {

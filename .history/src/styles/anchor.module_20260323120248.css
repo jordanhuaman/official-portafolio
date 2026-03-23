@@ -1,0 +1,18 @@
+.line {
+  content: "";
+  width: 4px;
+  background-color: white;
+  /* animation: grow 1s forwards; */
+  /* -webkit-animation:; */
+}
+
+
+@keyframes grow {
+  from {
+    width: 1%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
