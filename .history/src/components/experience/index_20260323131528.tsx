@@ -9,7 +9,7 @@ import styles from "@/styles/presentation.module.css"
 const ExperienceView = () => {
   const { apper } = useIntersectionObserver({ observar: "Experience" })
   return (
-    <div id='Experience' className={`mb-36 flex items-center justify-center ${apper ? styles.main : "opacity-0"}`} >
+    <div id='Experience' className={`mb-24 flex items-center justify-center ${apper ? styles.main : "opacity-0"}`} >
       <div className=''>
         <TitleSection sectionNumber='02' sectionTitle="Where I've work " />
         <WorkSections />

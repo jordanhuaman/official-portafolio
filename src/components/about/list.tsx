@@ -1,11 +1,10 @@
 import React from 'react'
-import helper from "@/styles/helpers.module.css"
 
 const List = ({ label }: { label: string }) => {
   return (
-    <div className='tracking-wide text-[#8e98a7] text-[13px]'>
-      <p className={`${helper.il_triangle}`}>{label}</p>
-    </div>
+    <span className='inline-block px-3 py-1 tracking-wide text-[13px] text-[#55d2d4] bg-[#183656] rounded-md'>
+      {label}
+    </span>
   )
 }
 

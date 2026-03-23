@@ -9,22 +9,18 @@ const Links = ({ name, isActive, onActivate }: { name: string; isActive: boolean
     onActivate();
     
     const element = document.getElementById(name);
-    console.log('Link clicked:', name, 'Element:', element);
-    
     if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: 'smooth'
-      });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.history.pushState(null, '', `#${name}`);
     }
   };
 
   return (
-    <div className={`flex gap-3 items-center ${styles.activation} p-2 ${isActive ? styles.active : ''}`}
-        onClick={handleClick}
-  >
+    <div 
+      className={`flex gap-3 items-center ${styles.activation} p-2 ${isActive ? styles.active : ''}`}>
       <div className={styles.line}/>
       <button
+        onClick={handleClick}
         className={`flex font-semibold tracking-widest text-sm transition-all duration-150 cursor-pointer`}>
         {name}
       </button>

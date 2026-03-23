@@ -14,7 +14,7 @@ const useIntersectionObserver = ({observar}:{observar:string}) => {
   }
   const optiones: IntersectionObserverInit = {
     rootMargin: "0px",
-    threshold: 0.8
+    threshold: 0.2
   }
 
   useEffect(() => {

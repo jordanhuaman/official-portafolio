@@ -11,8 +11,13 @@ const AboutView = () => {
 
 
   return (
-    <div id='About' className={` mb-36 ${apper ? styles.main : "opacity-0"}`}>
-      <InfoAbout />
+    <div id='About' className={`h-screen flex justify-center items-center ${apper ? styles.main : "opacity-0"}`}>
+      <div hidden className={`gap-3 flex flex-col md:flex-row`}>
+        <InfoAbout />
+        <div className='flex justify-center items-center ml-[20px] flex-1 bg-main'>
+        
+        </div>
+      </div>
     </div>
   )
 }

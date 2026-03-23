@@ -14,9 +14,9 @@
     "projects": "Projects"
   },
   "about":{
-    "about1":"I'm a backend developer with a passion for building efficient and scalable software. I have experience working with Java, Node.js and cloud technologies. I enjoy learning new technologies and improving my skills to create better solutions.",
+    "about1":"I'm Jhordan, a backend developer with a passion for building efficient and scalable software. I have experience working with Java, Node.js and cloud technologies. I enjoy learning new technologies and improving my skills to create better solutions.",
     "about2":"In my last job, I had the opportunity to work on a project that involved migrating a monolithic application to a microservices architecture. This experience allowed me to gain valuable insights into the benefits and challenges of microservices, as well as how to design and implement them effectively.",
-    "about3":"Nowadays, I'm focused on learning more about cloud computing and DevOps practices to enhance my skills and contribute to building robust and scalable applications."
+    "about3":""
   },
   "experience": {
     "jobs": [

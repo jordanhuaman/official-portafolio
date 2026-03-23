@@ -18,7 +18,7 @@ const InfoAbout = () => {
         <p className='text-slate'>{t('about.about2')}</p>
         <p className=' text-slate'>{t('about.about3')}</p>
       </section>
-      <section className='flex flex-wrap gap-2'>
+      <section className='grid grid-cols-2 gap-2'>
         {skills.map((s) => (
           <List key={s} label={s} />
         ))}
