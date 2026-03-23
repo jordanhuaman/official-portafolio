@@ -11,7 +11,7 @@ const ProyectsView = () => {
   const { apper } = useIntersectionObserver({ observar: "Projects" })
 
   return (
-    <div id='Projects' className={`flex justify-center items-center ${apper ? mainS.main : 'opacity-0'}`}>
+    <div id='Projects' className={`flex justify-center items-center scroll-mt-20 ${apper ? mainS.main : 'opacity-0'}`}>
       <div className={`gap-3 flex flex-col`}>
         <TitleSection sectionNumber='03' sectionTitle="Some Things I've Built" />
         <FlexProyects />

@@ -20,7 +20,7 @@ export default function Home() {
           <PresentationView />
           <InfoFixedLeft />
         </section>
-        <section ref={scrollRef} className="w-full md:w-1/2 py-20">
+        <section ref={scrollRef} className="w-full md:w-1/2 py-20 scroll-smooth">
           <AboutView />
           <ExperienceView />
           <ProyectsView />
