@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "@/styles/experience.module.css"
 import { PlayCircle } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
@@ -15,10 +15,17 @@ type Job = {
 const WorkSections = () => {
   const { t } = useTranslation();
   const [currentId, setCurrentId] = useState(0)
+  const [mounted, setMounted] = useState(false);
 
-  const jobs: Job[] = t('experience.jobs', { returnObjects: true }) as Job[];
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const jobs: Job[] = mounted ? t('experience.jobs', { returnObjects: true }) as Job[] : [];
 
   const currentJob = jobs[currentId];
+
+  if (!mounted) return null;
 
   return (
     <div className='mt-[10px] flex gap-20'>

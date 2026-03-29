@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from "@/styles/helpers.module.css"
 import List from '../about/list'
@@ -15,10 +15,14 @@ type Job = {
 }
 
 const Section = () => {
-
   const { t } = useTranslation();
+  const [mounted, setMounted] = useState(false);
 
-  const jobs: Job[] = t('experience.jobs', { returnObjects: true }) as Job[];
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const jobs: Job[] = mounted ? t('experience.jobs', { returnObjects: true }) as Job[] : [];
 
 
   return (
