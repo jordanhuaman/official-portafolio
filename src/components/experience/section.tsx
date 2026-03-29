@@ -17,6 +17,7 @@ type Job = {
 const Section = () => {
   const { t } = useTranslation();
   const [mounted, setMounted] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -32,7 +33,9 @@ const Section = () => {
         {jobs.map((job, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row gap-5 md:gap-10 justify-between rounded-md p-3 ${styles.section}`}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            className={`flex flex-col md:flex-row gap-5 md:gap-10 justify-between rounded-md p-3 ${styles.section} transition-opacity duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? 'opacity-40' : 'opacity-100'}`}
           >
             <p className={`shrink-0 text-sm tracking-wide opacity-55`}>{job.start} - {job.end}</p>
             <div className='flex flex-col gap-4'>
