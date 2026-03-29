@@ -48,7 +48,7 @@ const Section = () => {
           </div>
         ))}
       </div>
-      <section className='p-3'>View full sections</section>
+      <a href="/Jordan Alexander Huaman Guizgueta-cv.pdf" target="_blank" rel="noopener noreferrer" className='p-3 hover:text-primary transition-colors cursor-pointer'>View full sections</a>
     </div>
   )
 }
