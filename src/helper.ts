@@ -14,7 +14,7 @@ const proyects: Array<IProyect> = [
     src: "/proyects/grocery.png",
     description: "A application Full Stack using Expo and Neon Serverless, where you can create an account and save your tasks, you can also update and delete them",
     title: "Expo Grocery",
-    github: "",
+    github: "https://github.com/jordanhuaman/expo-grocery-yt",
     finished: true,
     stack: ["React-Native", "Expo", "Clerk Auth", "Neon Serverless"]
   },
