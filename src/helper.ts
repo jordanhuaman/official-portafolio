@@ -3,23 +3,29 @@ export interface IProyect {
   src: string
   title: string
   description: string
-  stack: string[]
+  stack: string[],
+  finished: boolean,
+  github: string,
 }
 
 const proyects: Array<IProyect> = [
   {
     id: 1,
-    src: "/proyects/up-task.png",
-    description: "A application Full-stack where you can fix task that you wanto to do, in here I applicated mern concepts joins front and backend intersection.",
-    title: "Up Task",
-    stack: ["React", "Node.js", "MongoDB", "Express"]
+    src: "/proyects/grocery.png",
+    description: "A application Full Stack using Expo and Neon Serverless, where you can create an account and save your tasks, you can also update and delete them",
+    title: "Expo Grocery",
+    github: "",
+    finished: true,
+    stack: ["React-Native", "Expo", "Clerk Auth", "Neon Serverless"]
   },
   {
     id: 2,
-    src: "/proyects/coffe.png",
-    description: "A complete application full stack in where i can render several imagenes, Similar a e-commer site, you can buy something and add to a card to pay later",
-    title: "Coffe e-commerse",
-    stack: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL"]
+    src: "/imagenes/todo-no.png",
+    description: "Java Todo list best practices, using DDD, Microservices, Cloud, CQRS and Event Driver Architecture, the frontend is made with React",
+    title: "Todo List",
+    github: "https://github.com/jordanhuaman/todo-app",
+    finished: false,
+    stack: ["Java", "DDD", "Microservices", "Cloud", "CQRS", "Event Driver Architecture", "React", "React Native"]
   }
 ]
 
